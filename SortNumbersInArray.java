@@ -2,7 +2,6 @@ package randomExercises;
 
 import java.util.Arrays;
 import java.util.Scanner;
-//	o usário informa 10 números que devem ficar na ordem crescente no Array;
 
 public class SortNumbersInArray {
 	public static void main(String[] args) {
@@ -59,18 +58,3 @@ public class SortNumbersInArray {
 		return true;
 	}
 }
-
-// MANEIRA QUE FIZ ANTERIORMENTE:
-//public static int[] sortTheArray(int[] numbersArray) {
-//	while (checkOrderOfArray(numbersArray) == false) {
-//		for (int i = 0; i < numbersArray.length - 1; i++) {
-//			if (numbersArray[i] > numbersArray[i + 1]) {
-//				int higherNumber = numbersArray[i];
-//				numbersArray[i] = numbersArray[i + 1];
-//				numbersArray[i + 1] = higherNumber;
-//			}
-//		}
-//	}
-//	
-//	return numbersArray;
-//}
