@@ -4,6 +4,10 @@ import java.util.ArrayDeque;
 import java.util.Queue;
 
 public class LineOfPeople {
-	Queue<People> LineOfPeople = new ArrayDeque<>();
-	
+	Queue<Person> LineOfPeople = new ArrayDeque<>();
+
+	void addPeopleToQueue(String name) {
+		Person people = new Person(name);
+		LineOfPeople.add(people);
+	}
 }

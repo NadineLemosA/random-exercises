@@ -1,5 +1,9 @@
 package randomExercises.practicingClasses.queueWithPeople;
 
-public class People {
+public class Person {
 	String name;
+	
+	Person(String name){
+		this.name = name;
+	}
 }
