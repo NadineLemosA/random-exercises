@@ -11,7 +11,3 @@ public class Person {
 		idGenerator++;		
 	}
 }
-
-//		double doubleRandomNumber = Math.random() * 25;
-//		int randomNumber = (int) doubleRandomNumber; // casting
-//		id = randomNumber;

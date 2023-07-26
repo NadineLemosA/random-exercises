@@ -56,45 +56,47 @@ public class QueueMenu {
 
 		input.close();
 	}
-	
+
 	void showListOfCreatedPeople() {
 		for (Person p : listOfPeopleCreated) {
 			System.out.print(p.id + " ");
 			System.out.println(p.name);
 		}
 	}
-	
+
 	void checkAndAddQueue() {
-		System.out.println("Digite o nome da pessoa que quer adicionar a fila:");
-		String informedPerson = input.next();
+		System.out.println("Digite o id da pessoa que quer adicionar a fila:");
+		int idInformed = input.nextInt();
 		boolean personWasFound = false;
-		
+
 		for (int i = 0; i < listOfPeopleCreated.size(); i++) {
-			Person personFound = listOfPeopleCreated.get(i);
-			
-			if (informedPerson.equalsIgnoreCase(personFound.name)) {
+			int idFound = listOfPeopleCreated.get(i).id;
+
+			if (idInformed == idFound) {
 				personWasFound = true;
-				lineOfPeople.addPeopleToQueue(personFound);
+				lineOfPeople.addPeopleToQueue(listOfPeopleCreated.get(i));
 			}
 		}
+
 		if (!personWasFound) {
 			System.out.println("Está pessoa ainda não foi criada.");
 		}
 	}
 
 	void checkAndRemoveFromQueue() {
-		System.out.println("Digite o nome da pessoa que quer retirar da fila:");
-		String informedPerson = input.next();
+		System.out.println("Digite o id da pessoa que quer retirar da fila:");
+		int idInformed = input.nextInt();
 		boolean personWasFound = false;
-		
+
 		for (int i = 0; i < listOfPeopleCreated.size(); i++) {
-			Person personFound = listOfPeopleCreated.get(i);
-			
-			if (informedPerson.equalsIgnoreCase(personFound.name)) {
+			int idFound = listOfPeopleCreated.get(i).id;
+
+			if (idInformed == idFound) {
 				personWasFound = true;
-				lineOfPeople.removePersonOfLine(personFound);
+				lineOfPeople.removePersonOfLine(listOfPeopleCreated.get(i));
 			}
 		}
+
 		if (!personWasFound) {
 			System.out.println("Está pessoa não está na fila.");
 		}

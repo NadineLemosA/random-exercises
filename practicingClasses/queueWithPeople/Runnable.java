@@ -9,4 +9,4 @@ public class Runnable {
 	}
 }
 
-//pegar por id, criar funções
+//pegar por id, incluir opções em função
