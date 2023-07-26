@@ -5,8 +5,6 @@ public class Runnable {
 	public static void main(String[] args) {
 		QueueMenu queueMenu1 = new QueueMenu();
 		
-		queueMenu1.checkChosenOption();
+		queueMenu1.checkTheChosenOptionAndExecute();
 	}
 }
-
-//pegar por id, incluir opções em função

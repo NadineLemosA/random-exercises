@@ -20,7 +20,7 @@ public class LineOfPeople {
 	void removePersonOfLine(Person person) {
 		line.remove(person);
 	}
-	
+
 	void callNextInLine() {
 		line.remove();
 	}

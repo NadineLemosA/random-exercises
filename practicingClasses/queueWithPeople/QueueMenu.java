@@ -22,7 +22,7 @@ public class QueueMenu {
 
 	Scanner input = new Scanner(System.in);
 
-	void checkChosenOption() {
+	void checkTheChosenOptionAndExecute() {
 		int userResponse;
 
 		do {
@@ -37,14 +37,14 @@ public class QueueMenu {
 				break;
 			case 2:
 				showListOfCreatedPeople();
-				checkAndAddQueue();
+				checkAndAddOrRemove(userResponse);
 				break;
 			case 3:
 				lineOfPeople.callNextInLine();
 				break;
 			case 4:
 				lineOfPeople.showTheQueue();
-				checkAndRemoveFromQueue();
+				checkAndAddOrRemove(userResponse);
 				break;
 			case 5:
 				lineOfPeople.showTheQueue();
@@ -64,41 +64,43 @@ public class QueueMenu {
 		}
 	}
 
-	void checkAndAddQueue() {
-		System.out.println("Digite o id da pessoa que quer adicionar a fila:");
-		int idInformed = input.nextInt();
-		boolean personWasFound = false;
+	void checkAndAddOrRemove(int userResponse) {
+		if (userResponse == 2) {
+			System.out.println("Digite o id da pessoa que quer adicionar a fila:");
+			int idInformed = input.nextInt();
+			boolean personWasFound = false;
 
-		for (int i = 0; i < listOfPeopleCreated.size(); i++) {
-			int idFound = listOfPeopleCreated.get(i).id;
-
-			if (idInformed == idFound) {
-				personWasFound = true;
-				lineOfPeople.addPeopleToQueue(listOfPeopleCreated.get(i));
+			for (int i = 0; i < listOfPeopleCreated.size(); i++) {
+				int idFound = listOfPeopleCreated.get(i).id;
+				if (idInformed == idFound) {
+					personWasFound = true;
+					lineOfPeople.addPeopleToQueue(listOfPeopleCreated.get(i));
+				}
 			}
-		}
-
-		if (!personWasFound) {
-			System.out.println("Está pessoa ainda não foi criada.");
-		}
-	}
-
-	void checkAndRemoveFromQueue() {
-		System.out.println("Digite o id da pessoa que quer retirar da fila:");
-		int idInformed = input.nextInt();
-		boolean personWasFound = false;
-
-		for (int i = 0; i < listOfPeopleCreated.size(); i++) {
-			int idFound = listOfPeopleCreated.get(i).id;
-
-			if (idInformed == idFound) {
-				personWasFound = true;
-				lineOfPeople.removePersonOfLine(listOfPeopleCreated.get(i));
+			if (!personWasFound) {
+				System.out.println("Está pessoa ainda não foi criada.");
 			}
-		}
+		} else {
 
-		if (!personWasFound) {
-			System.out.println("Está pessoa não está na fila.");
+			if (listOfPeopleCreated.isEmpty()) {
+				System.out.println("A fila está vazia!");
+			} else {
+				System.out.println("Digite o id da pessoa que quer retirar da fila:");
+				int idInformed = input.nextInt();
+				boolean personWasFound = false;
+
+				for (int i = 0; i < listOfPeopleCreated.size(); i++) {
+					int idFound = listOfPeopleCreated.get(i).id;
+					if (idInformed == idFound) {
+						personWasFound = true;
+						lineOfPeople.removePersonOfLine(listOfPeopleCreated.get(i));
+					}
+				}
+
+				if (!personWasFound) {
+					System.out.println("Está pessoa não está na fila.");
+				}
+			}
 		}
 	}
 }
