@@ -69,17 +69,22 @@ public class QueueMenu {
 		int idInformed = input.nextInt();
 		boolean personWasFound = false;
 
-		for (int i = 0; i < listOfPeopleCreated.size(); i++) {
-			int idFound = listOfPeopleCreated.get(i).id;
+		if (lineOfPeople.checkQueueMembers(idInformed)) {
+			System.out.println("Essa pessoa já está na fila.");
 
-			if (idInformed == idFound) {
-				personWasFound = true;
-				lineOfPeople.addPeopleToQueue(listOfPeopleCreated.get(i));
+		} else {
+			for (int i = 0; i < listOfPeopleCreated.size(); i++) {
+				int idFound = listOfPeopleCreated.get(i).id;
+
+				if (idInformed == idFound) {
+					personWasFound = true;
+					lineOfPeople.addPeopleToQueue(listOfPeopleCreated.get(i));
+				}
 			}
-		}
 
-		if (!personWasFound) {
-			System.out.println("Está pessoa ainda não foi criada.");
+			if (!personWasFound) {
+				System.out.println("Está pessoa ainda não foi criada.");
+			}
 		}
 	}
 

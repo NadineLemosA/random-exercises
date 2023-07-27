@@ -17,6 +17,17 @@ public class LineOfPeople {
 		}
 	}
 
+	boolean checkQueueMembers(int idInformed) {
+		boolean result = false;
+		for (int i = 0; i < line.size(); i++) {
+			if (idInformed == line.element().id) {
+				return true;
+			}
+			result = false;
+		}
+		return result;
+	}
+
 	void removePersonOfLine(Person person) {
 		line.remove(person);
 	}
