@@ -8,3 +8,4 @@ public class Runnable {
 		queueMenu1.checkTheChosenOptionAndExecute();
 	}
 }
+//nao pode ser possivel adicionar maiS de uma vez a mesma pessoa
