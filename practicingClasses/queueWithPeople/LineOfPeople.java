@@ -10,22 +10,19 @@ public class LineOfPeople {
 		line.add(person);
 	}
 
-	void showTheQueue() {
+	void showQueue() {
 		for (Person p : line) {
-			System.out.print(p.id + " ");
-			System.out.println(p.name);
+			System.out.println(p.id + " " + p.name);
 		}
 	}
 
 	boolean checkQueueMembers(int idInformed) {
-		boolean result = false;
 		for (int i = 0; i < line.size(); i++) {
 			if (idInformed == line.element().id) {
 				return true;
 			}
-			result = false;
 		}
-		return result;
+		return false;
 	}
 
 	void removePersonOfLine(Person person) {

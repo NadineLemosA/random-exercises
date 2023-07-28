@@ -7,13 +7,13 @@ public class QueueMenu {
 	LineOfPeople lineOfPeople = new LineOfPeople();
 	ArrayList<Person> listOfPeopleCreated = new ArrayList<>();
 
-	void writeMenuOnScreen() {
+	void showMenu() {
 		System.out.println("_________________________");
 		System.out.println("           MENU          ");
 		System.out.println("_________________________");
 		System.out.println("1- CRIAR PESSOA");
 		System.out.println("2- ADICIONAR PESSOA NA FILA");
-		System.out.println("3- CHAMAR PRÓX DA FILA");
+		System.out.println("3- CHAMAR PRÓXIMO DA FILA");
 		System.out.println("4- RETIRAR PESSOA NA FILA");
 		System.out.println("5- MOSTRAR A FILA");
 		System.out.println("6- SAIR");
@@ -26,14 +26,14 @@ public class QueueMenu {
 		int userResponse;
 
 		do {
-			writeMenuOnScreen();
+			showMenu();
 			userResponse = input.nextInt();
 
 			switch (userResponse) {
 			case 1:
 				System.out.println("Digite o nome da pessoa:");
-				Person newPerson = new Person(input.next());
-				listOfPeopleCreated.add(newPerson);
+				Person person = new Person(input.next());
+				listOfPeopleCreated.add(person);
 				break;
 			case 2:
 				showListOfCreatedPeople();
@@ -43,11 +43,11 @@ public class QueueMenu {
 				lineOfPeople.callNextInLine();
 				break;
 			case 4:
-				lineOfPeople.showTheQueue();
+				lineOfPeople.showQueue();
 				checkAndRemovePersonToQueue();
 				break;
 			case 5:
-				lineOfPeople.showTheQueue();
+				lineOfPeople.showQueue();
 				break;
 			}
 		} while (userResponse != 6);
@@ -59,8 +59,7 @@ public class QueueMenu {
 
 	void showListOfCreatedPeople() {
 		for (Person p : listOfPeopleCreated) {
-			System.out.print(p.id + " ");
-			System.out.println(p.name);
+			System.out.println(p.id + " " + p.name);
 		}
 	}
 
