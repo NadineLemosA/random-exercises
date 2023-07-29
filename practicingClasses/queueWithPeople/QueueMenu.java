@@ -97,6 +97,7 @@ public class QueueMenu {
 
 			for (int i = 0; i < listOfPeopleCreated.size(); i++) {
 				int idFound = listOfPeopleCreated.get(i).id;
+
 				if (idInformed == idFound) {
 					personWasFound = true;
 					lineOfPeople.removePersonOfLine(listOfPeopleCreated.get(i));

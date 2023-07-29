@@ -25,11 +25,12 @@ public class LineOfPeople {
 		return false;
 	}
 
-	void removePersonOfLine(Person person) {
+	Person removePersonOfLine(Person person) {
 		line.remove(person);
+		return person;
 	}
 
-	void callNextInLine() {
-		line.remove();
+	Person callNextInLine() {
+		return line.remove(); // isso funciona dessa forma?
 	}
 }
