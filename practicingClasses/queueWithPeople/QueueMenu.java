@@ -4,12 +4,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class QueueMenu {
-	final int CREATES_PERSON = 1;
-	final int ADD_PERSON = 2;
-	final int CALL_NEXT_PERSON = 3;
-	final int REMOVE_PERSON = 4;
-	final int SHOW_QUEUE = 5;
-	final int CLOSE = 6;
 	LineOfPeople lineOfPeople = new LineOfPeople();
 	ArrayList<Person> listOfPeopleCreated = new ArrayList<>();
 
@@ -29,6 +23,11 @@ public class QueueMenu {
 	Scanner input = new Scanner(System.in);
 
 	void checkTheChosenOptionAndExecute() {
+		final int CREATES_PERSON = 1;
+		final int ADD_PERSON = 2;
+		final int CALL_NEXT_PERSON = 3;
+		final int REMOVE_PERSON = 4;
+		final int SHOW_QUEUE = 5;
 		int userResponse;
 
 		do {
