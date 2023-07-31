@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class QueueMenu {
+	final int CREATES_PERSON = 1;
+	final int ADD_PERSON = 2;
+	final int CALL_NEXT_PERSON = 3;
+	final int REMOVE_PERSON = 4;
+	final int SHOW_QUEUE = 5;
+	final int CLOSE = 6;
 	LineOfPeople lineOfPeople = new LineOfPeople();
 	ArrayList<Person> listOfPeopleCreated = new ArrayList<>();
 
@@ -30,23 +36,23 @@ public class QueueMenu {
 			userResponse = input.nextInt();
 
 			switch (userResponse) {
-			case 1:
+			case CREATES_PERSON:
 				System.out.println("Digite o nome da pessoa:");
 				Person person = new Person(input.next());
 				listOfPeopleCreated.add(person);
 				break;
-			case 2:
+			case ADD_PERSON:
 				showListOfCreatedPeople();
 				checkAndAddPersonToQueue();
 				break;
-			case 3:
+			case CALL_NEXT_PERSON:
 				lineOfPeople.callNextInLine();
 				break;
-			case 4:
+			case REMOVE_PERSON:
 				lineOfPeople.showQueue();
 				checkAndRemovePersonToQueue();
 				break;
-			case 5:
+			case SHOW_QUEUE:
 				lineOfPeople.showQueue();
 				break;
 			}

@@ -31,6 +31,6 @@ public class LineOfPeople {
 	}
 
 	Person callNextInLine() {
-		return line.remove(); // isso funciona dessa forma?
+		return line.remove(); 
 	}
 }
