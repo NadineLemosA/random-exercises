@@ -7,7 +7,6 @@ public class Menu {
 	Aventador aventador;
 	Huracan huracan;
 	Cayenne cayenne;
-	Car car;
 	int userResponseTemplate;
 	Car chosenCar;
 
