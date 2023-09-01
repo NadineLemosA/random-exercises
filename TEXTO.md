@@ -1,1 +1,1 @@
-# meu primeiro merge
+# Exercicios de Funcionamento do Git concluídos
