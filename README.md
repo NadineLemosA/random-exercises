@@ -52,3 +52,28 @@ Agora tu vai perceber que todo o teu código voltou e isso acontece porque tudo 
 - Excluir a branch "segunda-linha-do-tempo"
 
 > IMPORTANTE: Se tu não fez o git push, que não pedi para tu fazer em nenhum momento. Tu vai ver que os arquivos ainda existem no GitHub e isso se dá porque tu não atualizou o GitHub. Não esquece que existem dois ambientes o local(git) e o remoto(GitHub). E as coisas que neles só são atualizadas se tu as atualizar manualmente. "git push" para enviar tuas alterações para o ambiente remoto e "git pull" para buscar as alterações do ambiente remoto
+
+### Merge
+
+O merge é o evento em que tu mistura as linhas do tempo. Por exemplo, digamos que tinha a linha do tempo A e criou a B. Na linha do tempo B tu começou a escrever uma nova história e tu decidiu que gostou de todas aquela decisões tomadas na linha do tempo B. Nesse caso tu mescla as duas
+
+Vamos criar uma nova linha do tempo(meu-primeiro-merge) fazer alterações e então mesclar(mergiar) com "exercicios-de-branch"
+
+- Na branch "exercicios-de-branch" execute "git log" para verificar qual o ultimo commit existente
+- Criar a branch "meu-primeiro-merge" a partir da "exercicios-de-branch"
+- Alterar o texto do arquivo "TEXTO.md" para "Meu primeiro merge" e commitar
+- Alternar para a branch "exercicios-de-branch". CUIDADO: Antes de executar o próximo passo tenha certeza que esta na branch "exercicios-de-branch"
+- Mergiar a branch "exercicios-de-branch" com a "meu-primeiro-merge". O comando é "git merge <nome-da-branch>". Por exemplo, "git merge meu-primeiro-merge". Ao usar o comando "git merge" irá abrir um arquivo de texto pois ao utilizar esse comando o Git cria um commit para registar o evento. Sempre deixar a mensagem padrão
+- "git log" e tu ira ver que o commit que tu criou na branch "meu-primeiro-merge" agora esta na branch "exercicios-de-branch" juntamente com o commit criado pelo merge
+- "git branch -D meu-primeiro-merge" para excluir a branch
+
+#### Exercicio merge
+
+- Criar uma branch "exercicio-merge-1" a partir da "exercicios-de-branch"
+- Criar um arquivo de texto "PRIMEIRABRANCH.md" com o texto "Essa é a primeira branch" e commita-lo
+- Criar uma branch "exercicio-merge-2" a partir da "exercicios-de-branch"
+- Criar um arquivo de texto "SEGUNDABRANCH.md" com o texto "Essa é a segunda branch" e commita-lo
+- Ir para a branch "exercicio-merge-1" e fazer o merge da "exercicio-merge-2" com ela
+- Verificar os registros dos commits "git log"
+- Ir para a branch "exercicios-de-branch"
+- Excluir as branchs "exercicio-merge-1" e "exercicio-merge-2"
