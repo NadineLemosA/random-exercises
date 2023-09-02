@@ -6,6 +6,7 @@ A coisa mais importante é entender o conteúdo. Então para atingir esse objeti
 
 - Tente refazer os exercicios sempre sem olhar nada. **ATENÇÃO**: Tudo dever ocorrer exatamente conforme o exercicio se algo aconteceu diferente algo errado foi feito
 - A cada novo exercicio REFAZER todos os anteriores. Quanto mais tu precisar ler a explicação para atingir deternada situação, menos tu tem isso fixado.
+- Depois que todos esse exercicios forem feitos e devidamente entendidos tentar fazer os exercicios do [learngitbranching](https://learngitbranching.js.org/?locale=pt_BR). O site possui conteúdo a mais mas vale a pena saber e entender todos 😀
 
 > **ATENÇÃO**: Isso se aplica apenas aos exercicios e não deve ser feito novamente os passo da explicação
 
@@ -25,6 +26,26 @@ A coisa mais importante é entender o conteúdo. Então para atingir esse objeti
 &emsp;&emsp;[Explicação](#merge)\
 &emsp;&emsp;[Exercicio](#exercicio-1)
 
+</details>
+
+<details>
+  <summary>Conflitos</summary>
+</details>
+
+<details>
+  <summary>Rebase</summary>
+
+&emsp;&emsp;[Explicação](#rebase)\
+&emsp;&emsp;[Exercicio](#exercicio-2)
+
+</details>
+
+<details>
+  <summary>Cherry-pick</summary>
+</details>
+
+<details>
+  <summary>Squash</summary>
 </details>
 
 ## Branch
@@ -58,7 +79,7 @@ Agora tu vai perceber que todo o teu código voltou e isso acontece porque tudo 
 
 > **NOTA**: O commit representa um ponto importante na história onde algo aconteceu. IMPORTANTE ter em mente que quando tu altera os aquivos e não commita eles não importam na linha to tempo não sendo enviador para o GitHub e ainda podem até não te deixar mudar de branch por não terem sido commitados(_salvos_). Nesse caso tu tem que decidir se tu abandona as alterações ou se tu as commita para criar esse ponto importante na história
 
-<p align="right"><a href="#índice">voltar ao índice ⬆️ </a></p>
+<p align="right"><a href="#índice">Voltar ao índice ⬆️ </a></p>
 
 #### Exercicio
 
@@ -72,23 +93,23 @@ Agora tu vai perceber que todo o teu código voltou e isso acontece porque tudo 
 
 > **IMPORTANTE**: Se tu não fez o git push, que não pedi para tu fazer em nenhum momento. Tu vai ver que os arquivos ainda existem no GitHub e isso se dá porque tu não atualizou o GitHub. Não esquece que existem dois ambientes o local(_Git_) e o remoto(_GitHub_). E as coisas que neles só são atualizadas se tu as atualizar manualmente. _"git push"_ para enviar tuas alterações para o ambiente remoto e _"git pull"_ para buscar as alterações do ambiente remoto
 
-<p align="right"><a href="#índice">voltar ao índice ⬆️ </a></p>
+<p align="right"><a href="#índice">Voltar ao índice ⬆️ </a></p>
 
 ## Merge
 
-O merge é o evento em que tu mistura as linhas do tempo. Por exemplo, digamos que tinha a linha do tempo A e criou a B. Na linha do tempo B tu começou a escrever uma nova história e tu decidiu que gostou de todas aquela decisões tomadas na linha do tempo B. Nesse caso tu mescla as duas
+O merge é o evento em que tu mistura as linhas do tempo. Por exemplo, digamos que tinha a linha do tempo A e criou a B. Na linha do tempo B tu começou a escrever uma nova história e tu decidiu que gostou de todas aquela decisões tomadas na linha do tempo B. Nesse caso tu mesclar(_mergiar_) as duas
 
-Vamos criar uma nova linha do tempo(_meu_-primeiro-merge) fazer alterações e então mesclar(_mergiar_) com _"exercicios-de-branch"_
+Vamos criar uma nova linha do tempo(_meu-primeiro-merge_) fazer alterações e então mergiar com _"exercicios-de-branch"_
 
 - Na branch _"exercicios-de-branch"_ execute _"git log"_ para verificar qual o ultimo commit existente
-- Criar a branch _"meu-primeiro-merge"_ a partir da _"exercicios-de-branch"_
+- Criar a branch _"meu-primeiro-merge"_ a partir da _"exercicios-de-branch"_ e ir para ela
 - Alterar o texto do arquivo _"TEXTO.md"_ para _"Meu primeiro merge"_ e commitar
 - Alternar para a branch _"exercicios-de-branch"_. CUIDADO: Antes de executar o próximo passo tenha certeza que esta na branch _"exercicios-de-branch"_
-- Mergiar a branch _"exercicios-de-branch"_ com a _"meu-primeiro-merge"_. O comando é _"git merge <nome-da-branch> --no-ff"_. Por exemplo, _"git merge meu-primeiro-merge --no-ff"_. Ao usar o comando _"git merge <nome-da-branch> --no-ff"_ o Git sempre irá cria um commit para registar o evento. O comando _"git merge <nome-da-branch>"_ apenas gera o commit automático em algumas situações para evitar isso usa-se a opção _"--no-ff"_
+- Mergiar a branch _"exercicios-de-branch"_ com a _"meu-primeiro-merge"_. O comando é _"git merge &lt;nome-da-branch&gt; --no-ff"_. Por exemplo, _"git merge meu-primeiro-merge --no-ff"_. Ao usar o comando _"git merge &lt;nome-da-branch&gt; --no-ff"_ o Git sempre irá cria um commit para registar o evento. O comando _"git merge &lt;nome-da-branch&gt;"_ apenas gera o commit automático em algumas situações para evitar isso usa-se a opção _"--no-ff"_
 - _"git log"_ e tu ira ver que o commit que tu criou na branch _"meu-primeiro-merge"_ agora esta na branch _"exercicios-de-branch"_ juntamente com o commit criado pelo merge
 - _"git branch -D meu-primeiro-merge"_ para excluir a branch
 
-<p align="right"><a href="#índice">voltar ao índice ⬆️ </a></p>
+<p align="right"><a href="#índice">Voltar ao índice ⬆️ </a></p>
 
 #### Exercicio
 
@@ -99,6 +120,69 @@ Vamos criar uma nova linha do tempo(_meu_-primeiro-merge) fazer alterações e e
 - Ir para a branch _"exercicio-merge-1"_ e fazer o merge da _"exercicio-merge-2"_ com ela
 - Verificar os registros dos commits _"git log"_
 - Ir para a branch _"exercicios-de-branch"_
-- Excluir as branchs _"exercicio-merge-1" e _"exercicio-merge-2"
+- Excluir as branchs _"exercicio-merge-1"_ e _"exercicio-merge-2"_
 
-<p align="right"><a href="#índice">voltar ao índice ⬆️ </a></p>
+<p align="right"><a href="#índice">Voltar ao índice ⬆️ </a></p>
+
+## Rebase
+
+O rebase também é um evento em que tu mistura as linhas do tempo. Porém ele não cria um commit e **_altera o ponto inicial da história_**. Por exemplo, digamos que tinha a linha do tempo A e tu criou a B baseado no commit A01 da linha do tempo A \
+![Passo 1 rebase](./assets/rebase-1.png)
+
+Na linha do tempo B tu começou a escrever uma nova história e tu decidiu que gostou de todas aquela decisões tomadas na linha do tempo B criando um commit \
+![Passo 2 rebase](./assets/rebase-2.png)
+
+Nesse caso tu iria mergiar A com B \
+![Passo 3 rebase](./assets/rebase-3.png)
+
+Porém alguém alterou a linha do tempo A. Agora o commit mais atualizado da branch é o A03 e é recomendado mergiar A com B para garantir que as alterações de B ainda funcionam como esperado \
+![Passo 4 rebase](./assets/rebase-4.png)
+
+> _NOTA_: A parte que esta em vermelho demonstra o que aconteceria se simplesmente fosse feito o _"git merge &lt;nome-da-branch&gt; --no-ff"_ de A com B
+
+Agora, para garantir que as alterações de B ainda fazem sentido com o A atualizado, iremos redefinir o commit base de B para A03 com _"git rebase &lt;nome-da-branch&gt;"_ evitando um commit de merge, e então, podendo validar as alterações de B \
+![Passo 5 rebase](./assets/rebase-5.png)
+
+> _IMPORTANTE_: Observe que o código foi mergiado utilizando o rebase. Agora o ponto inicial de B não é A01 e sim A03. Isso porque nós **_alteramos o commit base_**, alteramos o ponto inicial da história, por isso _"RE BASE"_ \
+
+Agora com B atualizado podemos fazer o merge de A com B sem medo \
+![Passo 6 rebase](./assets/rebase-6.png)
+
+Como o rebase é um evento que redefine o ponto inicial da linha do tempo. O que faremos é alternar a história para uma diferente linha do tempo no evento EV01. Construir uma história que gostamos, a EV02, nessa nova linha do tempo e então iremos mesclar essa linha do tempo com a principal que agora esta em um evento posterior ao evento EV01, o evento EV03. Porém para garantir que o evento que vivemos(EV02) na linha do tempo alternativa ainda é possivel de acontecer. Iremos alternar o ponto inicial dessa nova linha do tempo para o EV03 e então misturar a nova linha do tempo com a principal
+
+- Criar a branch _"meu-primeiro-rebase"_ a partir da _"exercicios-de-branch"_ e ir para ela
+- Criar um arquivo de texto _"MEUPRIMEIROREBASE.md"_ com o texto _"Meu primeiro rebase"_ e commitar
+- _"git log"_ e tu ira ver que o commit que o commit _"Meu primeiro rebase"_ agora consta no histórico
+- Alternar para a branch _"exercicios-de-branch"_
+- Renomear o arquivo _"TEXTO.md"_ para _"MEUPRIMEIROMERGE.md"_ com o texto _"Meu primeiro merge"_ e commitar
+- _"git log"_ e tu ira ver que o commit que o commit _"Meu primeiro merge"_ agora consta no histórico.
+- Alternar para a branch _"meu-primeiro-rebase"_
+- Alterar o commit base da branch _"meu-primeiro-rebase"_ para o ultimo commit da branch _"exercicios-de-branch"_ com o commando _"git rebase exercicios-de-branch"_
+- _"git log"_ e tu ira ver que o commit que o commit _"Meu primeiro merge"_ agora consta no histórico. Como se ele sempre estivesse lá
+- Alterar para a branch _"exercicios-de-branch"_
+- _"git merge meu-primeiro-rebase --no-ff"_
+- _"git log"_ e tu ira ver que o commit que o commit _"Meu primeiro rebase"_ agora consta no histórico juntamente com o commit do merge
+- _"git branch -D meu-primeiro-rebase"_ para excluir a branch
+
+<p align="right"><a href="#índice">Voltar ao índice ⬆️ </a></p>
+
+#### Exercicio
+
+- Criar uma branch _"exercicio-rebase-1"_ a partir da _"exercicios-de-branch"_
+- Criar um arquivo de texto _"PRIMEIRO.md"_ com o texto _"Primeiro"_ e commita-lo
+- Verificar os registros dos commits _"git log"_
+- Criar uma branch _"exercicio-rebase-2"_ a partir da _"exercicio-rebase-1"_
+- Criar um arquivo de texto _"SEGUNDO.md"_ com o texto _"Segundo"_ e commita-lo
+- Verificar os registros dos commits _"git log"_
+- Ir para a branch _"exercicio-rebase-1"_
+- Criar um arquivo de texto _"TERCEIRO.md"_ com o texto _"Terceiro"_ e commita-lo
+- Verificar os registros dos commits _"git log"_
+- Ir para a branch _"exercicio-rebase-2"_
+- Altera o ponto inicial para o ultimo de _"exercicio-rebase-1"_
+- Verificar os registros dos commits _"git log"_
+- Ir para a branch _"exercicio-rebase-1"_ e fazer o merge da _"exercicio-rebase-2"_ com ela
+- Verificar os registros dos commits _"git log"_
+- Ir para a branch _"exercicios-de-branch"_
+- Excluir as branchs _"exercicio-rebase-1"_ e _"exercicio-rebase-2"_
+
+<p align="right"><a href="#índice">Voltar ao índice ⬆️ </a></p>
