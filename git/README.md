@@ -30,13 +30,17 @@ A coisa mais importante é entender o conteúdo. Então para atingir esse objeti
 
 <details>
   <summary>Conflitos</summary>
+
+&emsp;&emsp;[Explicação](#conflitos)\
+&emsp;&emsp;[Exercicio](#exercicio-2)
+
 </details>
 
 <details>
   <summary>Rebase</summary>
 
 &emsp;&emsp;[Explicação](#rebase)\
-&emsp;&emsp;[Exercicio](#exercicio-2)
+&emsp;&emsp;[Exercicio](#exercicio-3)
 
 </details>
 
@@ -104,7 +108,10 @@ Vamos criar uma nova linha do tempo(_meu-primeiro-merge_) fazer alterações e e
 - Na branch _"exercicios-de-branch"_ execute _"git log"_ para verificar qual o ultimo commit existente
 - Criar a branch _"meu-primeiro-merge"_ a partir da _"exercicios-de-branch"_ e ir para ela
 - Alterar o texto do arquivo _"TEXTO.md"_ para _"Meu primeiro merge"_ e commitar
-- Alternar para a branch _"exercicios-de-branch"_. CUIDADO: Antes de executar o próximo passo tenha certeza que esta na branch _"exercicios-de-branch"_
+- Alternar para a branch _"exercicios-de-branch"_
+
+> **ATENÇÃO**: Antes de executar o próximo passo tenha certeza que esta na branch _"exercicios-de-branch"_
+
 - Mergiar a branch _"exercicios-de-branch"_ com a _"meu-primeiro-merge"_. O comando é _"git merge &lt;nome-da-branch&gt; --no-ff"_. Por exemplo, _"git merge meu-primeiro-merge --no-ff"_. Ao usar o comando _"git merge &lt;nome-da-branch&gt; --no-ff"_ o Git sempre irá cria um commit para registar o evento. O comando _"git merge &lt;nome-da-branch&gt;"_ apenas gera o commit automático em algumas situações para evitar isso usa-se a opção _"--no-ff"_
 - _"git log"_ e tu ira ver que o commit que tu criou na branch _"meu-primeiro-merge"_ agora esta na branch _"exercicios-de-branch"_ juntamente com o commit criado pelo merge
 - _"git branch -D meu-primeiro-merge"_ para excluir a branch
@@ -124,29 +131,86 @@ Vamos criar uma nova linha do tempo(_meu-primeiro-merge_) fazer alterações e e
 
 <p align="right"><a href="#índice">Voltar ao índice ⬆️ </a></p>
 
+## Conflitos
+
+O conflito acontece quando as linhas do tempo interagiram de formas diferentes com a mesma coisa. Nesse caso, no momento em que é mergiada as linhas do tempo o Git dirá que há conflitos e você deve ajustar a história para que ambas a linhas do tempo façam sentido
+
+- Criar um arquivo _"CONFLITO.md"_ com o texto "Primeira linha adicionada" e comita-lo com a mensagem "Primeira linha adicionada"
+- Criar uma branch _"meu-primeiro-conflito-1"_ a partir de _"exercicios-de-branch"_
+- Adicionar uma nova linha no arquivo _"CONFLITO.md"_ com o texto "Segunda linha adicionada" e comita-lo com a mensagem "Segunda linha adicionada"
+- Criar uma branch _"meu-primeiro-conflito-2"_ a partir de _"meu-primeiro-conflito-1"_
+- Adicionar uma nova linha no arquivo _"CONFLITO.md"_ com o texto "Terceira linha adicionada" e comita-lo com a mensagem "Terceira linha adicionada"
+- Ir para a branch _"meu-primeiro-conflito-1"_
+- Adicionar uma nova linha no arquivo _"CONFLITO.md"_ com o texto "Quarta linha adicionada" e comita-lo com a mensagem "Quarta linha adicionada"
+
+> **ATENÇÃO**: Nesse momento, na linha 3 do arquivo _"CONFLITO.md_" exitem 2 informações diferentes em branchs diferentes(_"meu-primeiro-conflito-1"_ e _"meu-primeiro-conflito-2"_). Utilize o _"git checkout &lt;nome-da-branch&gt;"_ para alternar entre as branchs e ver
+
+- Da branch _"meu-primeiro-conflito-1"_ faça o merge com _"meu-primeiro-conflito-2"_. Nesse momento o git irá avisar que ocorreu um erro ao mergiar porque existe um conflito no arquivo _"CONFLITO.md"_ e que você deve corrigir e então comitar a correção
+
+![Conflict image](../assets/conflict/conflict-1.png)
+
+- Utilizando o comando _"git status"_ será possível ver qual é o arquivo que esta com o conflito
+
+![Conflict image](../assets/conflict/conflict-2.png)
+
+> **ATENÇÃO**: O Git irá sugerir o comando _"git merge --abort"_ para abortar o merge. Deve ser usado caso algum problema seja identificado no conflito. Como, por exemplo, 2 funcionalidades que não funcionam juntas
+
+- Ao abrir o arquivo com conflito será posssivel distinguir pela IDE quais são os conflitos identificados pelo Git. o código na area chamada de **HEAD(Current change)** é o código que atualmente esta na branch atual e o código na area chama de **meu-primeiro-conflito-2(Incoming change)** é o código que esta vindo da branch mergiada
+
+![Conflict image](../assets/conflict/conflict-3.png)
+
+> **ATENÇÃO**: Diferentes IDEs vão mostrar o conflito no arquivo de formas diferentes, porém semelhantes
+
+- Para corrigir o conflito basta simplesmente ajustar o código apagando as linhas _&lt;&lt;&lt;&lt;HEAD""_, _"===="_ e _"&gt;&gt;&gt;&gt;meu-primeiro-conflito-2"_ e reoganizando o código de maneira que ele volte a fazer sentido
+
+> **ATENÇÃO**: No caso do VSCode é possivel simplesmente clicar em uma das opções _"Accept Current Change | Accept Inconming Change | Accept Both Changes | Compare Changes"_ e a IDE irá ajustar conforme selecionado. Seja utlizando só o que esta na area de _"HEAD"_ e discartando o resto ao clicar em _"Accept Current Change"_. Seja utlizando só o que esta na area de _"meu-primeiro-conflito-2"_ e discartando o resto ao clicar em _"Accept Inconming Change"_. Seja mesclando as duas alterações ao clicar em _"Accept Both Changes"_. _"Compare Changes"_ irá apenas comparar as alterações
+
+- Após corrigir o conflito basta simplesmente dar um _"git add git/CONFLITO.md"_ no arquivo corrigido e então comita-los
+- Ir para a branch _"exercicios-de-branch"_ e mergiar com "meu-primeiro-conflito-1"
+- Excluir o arquivo _"CONFLITO.md"_ e commitar
+- Excluir as branchs "meu-primeiro-conflito-1" e "meu-primeiro-conflito-2"
+- Atualizar o GitHub
+
+<p align="right"><a href="#índice">Voltar ao índice ⬆️ </a></p>
+
+#### Exercicio
+
+- Criar uma branch _"A"_ a partir de _"exercicios-de-branch"_
+- Criar um arquivo _"CONFLITO.md"_ com o texto _"Primeira linha adicionada"_ e comita-lo com a mensagem _"Primeira linha adicionada"_
+- Criar uma branch _"B"_ a partir de _"A"_
+- Adicionar uma nova linha no arquivo _"CONFLITO.md"_ com o texto "Segunda linha adicionada" e comita-lo com a mensagem _"Segunda linha adicionada"_
+- Ir para a branch _"A"_
+- Adicionar uma nova linha no arquivo _"CONFLITO.md"_ com o texto "Terceira linha adicionada" e comita-lo com a mensagem _"Terceira linha adicionada"_
+- Fazer o merge com _"B"_
+- Corrigir o conflito e commitar
+- Ir para a branch _"exercicios-de-branch"_
+- Excluir _"A"_ e _"B"_
+
+<p align="right"><a href="#índice">Voltar ao índice ⬆️ </a></p>
+
 ## Rebase
 
 O rebase também é um evento em que tu mistura as linhas do tempo. Porém ele não cria um commit e **_altera o ponto inicial da história_**. Por exemplo, digamos que tinha a linha do tempo A e tu criou a B baseado no commit A01 da linha do tempo A \
-![Passo 1 rebase](./assets/rebase-1.png)
+![Rebase image](../assets/rebase/rebase-1.png)
 
 Na linha do tempo B tu começou a escrever uma nova história e tu decidiu que gostou de todas aquela decisões tomadas na linha do tempo B criando um commit \
-![Passo 2 rebase](./assets/rebase-2.png)
+![Rebase image](../assets/rebase/rebase-2.png)
 
 Nesse caso tu iria mergiar A com B \
-![Passo 3 rebase](./assets/rebase-3.png)
+![Rebase image](../assets/rebase/rebase-3.png)
 
 Porém alguém alterou a linha do tempo A. Agora o commit mais atualizado da branch é o A03 e é recomendado mergiar A com B para garantir que as alterações de B ainda funcionam como esperado \
-![Passo 4 rebase](./assets/rebase-4.png)
+![Rebase image](../assets/rebase/rebase-4.png)
 
 > _NOTA_: A parte que esta em vermelho demonstra o que aconteceria se simplesmente fosse feito o _"git merge &lt;nome-da-branch&gt; --no-ff"_ de A com B
 
 Agora, para garantir que as alterações de B ainda fazem sentido com o A atualizado, iremos redefinir o commit base de B para A03 com _"git rebase &lt;nome-da-branch&gt;"_ evitando um commit de merge, e então, podendo validar as alterações de B \
-![Passo 5 rebase](./assets/rebase-5.png)
+![Rebase image](../assets/rebase/rebase-5.png)
 
 > _IMPORTANTE_: Observe que o código foi mergiado utilizando o rebase. Agora o ponto inicial de B não é A01 e sim A03. Isso porque nós **_alteramos o commit base_**, alteramos o ponto inicial da história, por isso _"RE BASE"_ \
 
 Agora com B atualizado podemos fazer o merge de A com B sem medo \
-![Passo 6 rebase](./assets/rebase-6.png)
+![Rebase image](../assets/rebase/rebase-6.png)
 
 Como o rebase é um evento que redefine o ponto inicial da linha do tempo. O que faremos é alternar a história para uma diferente linha do tempo no evento EV01. Construir uma história que gostamos, a EV02, nessa nova linha do tempo e então iremos mesclar essa linha do tempo com a principal que agora esta em um evento posterior ao evento EV01, o evento EV03. Porém para garantir que o evento que vivemos(EV02) na linha do tempo alternativa ainda é possivel de acontecer. Iremos alternar o ponto inicial dessa nova linha do tempo para o EV03 e então misturar a nova linha do tempo com a principal
 
