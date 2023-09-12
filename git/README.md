@@ -13,6 +13,14 @@ A coisa mais importante é entender o conteúdo. Então para atingir esse objeti
 ## Índice
 
 <details>
+  <summary>Convenções</summary>
+
+&emsp;&emsp;[Nomenclatura de branch](#nomenclatura-de-branch)\
+&emsp;&emsp;[Mensagens de commits](#mensagens-de-commits)
+
+</details>
+
+<details>
   <summary>Branch</summary>
 
 &emsp;&emsp;[Explicação](#branch)\
@@ -51,6 +59,18 @@ A coisa mais importante é entender o conteúdo. Então para atingir esse objeti
 <details>
   <summary>Squash</summary>
 </details>
+
+## Convenções
+
+Convenções são padrões comuns utlizados por desenvolvedores em seus projetos para melhor padronizar os projetos, podendo também serem utilizadas para automatizar processos relacionados ao repositório, como por exemplo, mergiar automaticamente duas branch se determinado critério for atingido. Alguns projetos possuem convenções próprias, por isso sempre que iniciar em um projeto procure saber quais são as convenções utilizadas nele
+
+### Nomenclatura de branch
+
+Convenções muito comuns utilizadas em projetos são as de nomenclatura de branchs. Normalmente os desenvolvedores buscam nomear as branchs dos projeto com nomes curtos e objetivos, utilizando kebab-case no nome(exemplo-de-kebab-case), com algum tipo de identificador da tarefa e um tipo de prefixo para dar uma ideia do que o branch se trata. Por exemplo, **hotfix** para corrigir rapidamente problemas críticos, geralmente com uma solução temporária, **bugfix** para corrigir um bug ou **feature** para adicionar, remover ou modificar um recurso. Leia essas [dicas](https://tilburgsciencehub.com/building-blocks/collaborate-and-share-your-work/use-github/naming-git-branches/) para ver mais exemplos
+
+### Mensagens de commits
+
+As convenções para commits são um pouco mais polêmicas e não muito conhecidas/utilizadas, porém também são muito uteis. Seja para padronizar as mensagens como para facilitar o o entendimento do objetivo do commit. Uma das principais vantagens da utilização de uma convenção de commits é na automação do versionamento do projeto. Utilizando a especificação do [conventional commits](https://www.conventionalcommits.org/pt-br/v1.0.0/) é muito mais fácil para o time automatizar o versionamento do código utilizando a especificação [semver](https://semver.org/lang/pt-BR/), utilizado para definir qual a versão 1.0.0 ou 1.0.1...
 
 ## Branch
 
