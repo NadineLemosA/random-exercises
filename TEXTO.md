@@ -1,1 +1,0 @@
-# Exercicios de Funcionamento do Git concluídos
