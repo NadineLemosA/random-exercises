@@ -1,1 +1,2 @@
-# Primeira linha adicionada
+Primeira linha adicionada
+Segunda linha adicionada
