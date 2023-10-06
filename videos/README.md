@@ -14,7 +14,12 @@ Após ver o vídeo escrever um resumo com tuas palavras abaixo. Para não precis
 
 ### Base
 
-- [ ] [IDE](https://www.youtube.com/watch?v=GPcIjsz-2cA&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=93)
+- [x] [IDE](https://www.youtube.com/watch?v=GPcIjsz-2cA&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=93)
+"ide - ambiente de desensvolvomento integrado
+Ambiente que reune funcionalidades que auxiliam o programador no desenvolvimento, para maior produtividade. Como, capacidade de rodar, compilar e executar o codigo. Capacidade para debugar linha a linha e de indentificar erros de sintasse e execucao.
+
+o que uma ide deve conter:
+editor de codigo, compilador, link, debug, modelador - modelagem de classes, objetos e demais funções de linguagem, gerador de codigo, deploy, testes automatizados, refatoração, integraçao com congtrole de versao, shell integrado - linha de comando."
 
 - [ ] [POO](https://www.youtube.com/watch?v=QY0Kdg83orY&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=146)
 
