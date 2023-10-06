@@ -15,6 +15,7 @@ Após ver o vídeo escrever um resumo com tuas palavras abaixo. Para não precis
 ### Base
 
 - [x] [IDE](https://www.youtube.com/watch?v=GPcIjsz-2cA&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=93)
+
 "ide - ambiente de desensvolvomento integrado
 Ambiente que reune funcionalidades que auxiliam o programador no desenvolvimento, para maior produtividade. Como, capacidade de rodar, compilar e executar o codigo. Capacidade para debugar linha a linha e de indentificar erros de sintasse e execucao.
 
