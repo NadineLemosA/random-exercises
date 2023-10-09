@@ -34,9 +34,13 @@ encapsulamento - capacidade de esconder detalhes da implementação do objeto, a
 abstração - representar objeto de forma abstrata, criação feita somente a partir de classes filhas, nunca da superclasse
 
 
-- [ ] [Java](https://www.youtube.com/watch?v=sZAxLRMxEUo&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=100)
+- [x] [Java](https://www.youtube.com/watch?v=sZAxLRMxEUo&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=100)
 
-- [ ] [CLI](https://www.youtube.com/watch?v=8AgOxHOAV9Y&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=34)
+- [x] [CLI](https://www.youtube.com/watch?v=8AgOxHOAV9Y&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=34)
+
+Command Line Interface - comunicação por linha de comando.
+Utilizado para executar tarefas no sistema operacional ou em um determinado ambiente. 
+Possiu vantagem em eficiencia e agilidade na automatização e controle. Cada CLI tem comandos expecíficos.
 
 - [ ] [Git](https://www.youtube.com/watch?v=za5KWZ5pRag&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=83)
 
