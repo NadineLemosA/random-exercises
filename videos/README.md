@@ -22,7 +22,17 @@ Ambiente que reune funcionalidades que auxiliam o programador no desenvolvimento
 o que uma ide deve conter:
 editor de codigo, compilador, link, debug, modelador - modelagem de classes, objetos e demais funções de linguagem, gerador de codigo, deploy, testes automatizados, refatoração, integraçao com congtrole de versao, shell integrado - linha de comando."
 
-- [ ] [POO](https://www.youtube.com/watch?v=QY0Kdg83orY&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=146)
+- [x] [POO](https://www.youtube.com/watch?v=QY0Kdg83orY&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=146)
+
+Paradigma de desenvolvimento, contrário ao procedural, suportado por diversas linguagens e utilizado em diversas fases do desenvolvimento, não somente na linguagem.
+Tem como objetivo representar o mundo real em objetos(aglutinação de estados e comportamentos). 
+Ajudam na leitura, reutilização e manutenção do código.
+Pilares:
+herança - caracteristicas podem ser recplicadas de um objeto para o outro
+polimorfismo - objetos compativeis, reescrita de um metodo herdada de uma classe
+encapsulamento - capacidade de esconder detalhes da implementação do objeto, adiciona segurança na aplicação
+abstração - representar objeto de forma abstrata, criação feita somente a partir de classes filhas, nunca da superclasse
+
 
 - [ ] [Java](https://www.youtube.com/watch?v=sZAxLRMxEUo&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=100)
 
