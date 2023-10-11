@@ -42,7 +42,11 @@ Command Line Interface - comunicação por linha de comando.
 Utilizado para executar tarefas no sistema operacional ou em um determinado ambiente. 
 Possiu vantagem em eficiencia e agilidade na automatização e controle. Cada CLI tem comandos expecíficos.
 
-- [ ] [Git](https://www.youtube.com/watch?v=za5KWZ5pRag&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=83)
+- [x] [Git](https://www.youtube.com/watch?v=za5KWZ5pRag&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=83)
+
+GIT
+Sistema de controle de versão. Arquitetura/repositório descentralizado, baseada em branchs(linhas de tempo).
+Utilizado para permitir alterações simultaneas no código fonte de um projeto, sem que haja sobrescrição de alterações. Criação de novas funcionalidades feitas em novas branchs.
 
 - [ ] [GitHub](https://www.youtube.com/watch?v=myQuetgSEsY&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=85)
 
