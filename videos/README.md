@@ -52,7 +52,10 @@ Utilizado para permitir alterações simultaneas no código fonte de um projeto,
 
 Comunidade de código aberto. Plataforma onde será centralizado o repositorio GIT, hospedando na nuvem. Permitindo alterações paralelas. 
 
-- [ ] [GitFlow](https://www.youtube.com/watch?v=oweffeS8TRc&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=84)
+- [x] [GitFlow](https://www.youtube.com/watch?v=oweffeS8TRc&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=84)
+
+Workflow para organização de versionamento de código no repositório. Tipificação de branchs, separadas em principal e de suporte. Onde é criada outra branch principal para criar um paralelo com a master. Utilizando auxiliares para modificações e implementações na produção.
+Nas principais temos: Master e Develop. E as de suporte: hotfix (correção de bugs), feature, release(correções liberadas para master).
 
 - [ ] [Code Review](https://www.youtube.com/watch?v=_7W9pqWPyfc&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=38)
 
