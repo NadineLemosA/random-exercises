@@ -48,7 +48,9 @@ GIT
 Sistema de controle de versão. Arquitetura/repositório descentralizado, baseada em branchs(linhas de tempo).
 Utilizado para permitir alterações simultaneas no código fonte de um projeto, sem que haja sobrescrição de alterações. Criação de novas funcionalidades feitas em novas branchs.
 
-- [ ] [GitHub](https://www.youtube.com/watch?v=myQuetgSEsY&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=85)
+- [x] [GitHub](https://www.youtube.com/watch?v=myQuetgSEsY&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=85)
+
+Comunidade de código aberto. Plataforma onde será centralizado o repositorio GIT, hospedando na nuvem. Permitindo alterações paralelas. 
 
 - [ ] [GitFlow](https://www.youtube.com/watch?v=oweffeS8TRc&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=84)
 
