@@ -57,7 +57,9 @@ Comunidade de código aberto. Plataforma onde será centralizado o repositorio G
 Workflow para organização de versionamento de código no repositório. Tipificação de branchs, separadas em principal e de suporte. Onde é criada outra branch principal para criar um paralelo com a master. Utilizando auxiliares para modificações e implementações na produção.
 Nas principais temos: Master e Develop. E as de suporte: hotfix (correção de bugs), feature, release(correções liberadas para master).
 
-- [ ] [Code Review](https://www.youtube.com/watch?v=_7W9pqWPyfc&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=38)
+- [x] [Code Review](https://www.youtube.com/watch?v=_7W9pqWPyfc&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=38)
+
+Prática da engenharia de software, que realiza revisão do código e verifica se o mesmo cumpre requisitos propostos e se está de acordo com o esperado. Geralmente realizado por outro dev. Melhora do codigo atraves de um outro ponto de vista. Deve ser realizado apos os testes. Desing, funcionalidade, complexidade, segurança, nomenclatura, documentação devem ser levados em consideração na prática.
 
 ### Aquece Flutter
 
