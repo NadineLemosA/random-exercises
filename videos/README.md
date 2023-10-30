@@ -73,7 +73,22 @@ Prática da engenharia de software, que realiza revisão do código e verifica s
 
 ### Bom conhecer
 
-- [ ] [Agile](https://www.youtube.com/watch?v=HdE8S2ALvWI&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=6)
+- [x] [Agile](https://www.youtube.com/watch?v=HdE8S2ALvWI&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=6)
+
+Abodagem de gerenciamento de software. Prega que o processo deve ser em pequenas e constantes entregas. Surgiu no manifesto agil de 2001. Pessoas, não os processos, estao em primeiro lugar. Principios basicos que guiam diversas metodologias ageis.
+
+1. Valor. Entrega continua e adiantada, com valor agregado
+2. Flexibilidade. Mudanças nos requisitos sao bem vindas
+3. Frequência. Entregar frequentemente software funcionando, visando a menor escala de tempo
+4. União. Pessoas de negocio e desenvolvedores devem trabalhar em conjunto
+5. Motivação. Construção de projetos em torno de individuos motivados, dando suporte e autonomia
+6. Comunicação. Rede de comunicação eficaz entre os indivuduos da equipe, se possivel face-to-face
+7. Funcionalidade. Software funcionando é a medida primaria de progresso
+8. Sustentabilidade. Processos ageis promovem desenvolvimento sustentavel, os envolvidos devem ser capazes de manter o ritmo contante
+9. Revisão. Continua atenção a excelência técnica e a um bom desing aumenta a agilidade
+10. Simplicidade. 
+11. Organização. 
+12. Autoavaliação.
 
 - [ ] [SCRUM](https://www.youtube.com/watch?v=3aCww_1RnL0&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=168)
 
