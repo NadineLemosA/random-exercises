@@ -90,7 +90,13 @@ Abodagem de gerenciamento de software. Prega que o processo deve ser em pequenas
 11. Organização. 
 12. Autoavaliação.
 
-- [ ] [SCRUM](https://www.youtube.com/watch?v=3aCww_1RnL0&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=168)
+- [x] [SCRUM](https://www.youtube.com/watch?v=3aCww_1RnL0&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=168)
+
+Abordagem agil de gerenciamento de projetos. Coletivismo e integração. Framework, ou metodologia agil que usa sequencia de trabalho incremental e interativa. Classifica tarefas em estágios, para dar visibilidade do progresso do trabalho. To Do, WIP e Done. Voltado a melhoria continua. 
+Elementos: 
+Papeis - Equipe e responsaveis pela gestao e desenvolvimento do projeto
+Artefatos - Backlog, lista de requisitos da aplicação (product e sprint criado a partis do product). Historias, descritivo claro e objetivo da funcionalidade que seja desenvolvida, tarefas. Burndown, grafico que demonstra a linha de esforço para trabalhos que ja foram e precisam ser realizados (product e sprint).
+Eventos - Sprint, ciclo de desenvolvimento com tempo pré determinado. Sprint planing, para definição do tempo para o String Backlog. Daily Scrum, reunioes diarias de planejamento e controle. Sprint review, focado no aceite ou nao do trabalho realizado. Sprint Retrospective, reuniao realizada apos o review, analizar o processo de trabalho. Ver ciclo.
 
 - [ ] [DevOps](https://www.youtube.com/watch?v=iwf6kcvxeD4&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=63)
 
