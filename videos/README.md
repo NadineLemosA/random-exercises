@@ -98,7 +98,16 @@ Papeis - Equipe e responsaveis pela gestao e desenvolvimento do projeto
 Artefatos - Backlog, lista de requisitos da aplicação (product e sprint criado a partis do product). Historias, descritivo claro e objetivo da funcionalidade que seja desenvolvida, tarefas. Burndown, grafico que demonstra a linha de esforço para trabalhos que ja foram e precisam ser realizados (product e sprint).
 Eventos - Sprint, ciclo de desenvolvimento com tempo pré determinado. Sprint planing, para definição do tempo para o String Backlog. Daily Scrum, reunioes diarias de planejamento e controle. Sprint review, focado no aceite ou nao do trabalho realizado. Sprint Retrospective, reuniao realizada apos o review, analizar o processo de trabalho. Ver ciclo.
 
-- [ ] [DevOps](https://www.youtube.com/watch?v=iwf6kcvxeD4&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=63)
+- [x] [DevOps](https://www.youtube.com/watch?v=iwf6kcvxeD4&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=63)
+
+Devops - development e operations
+Cultura de automatização de processos de desenvolvimento e infraestrutura. Cultura de trabalho, com praticas e ferramentas. Praticas agile fazem parte desse distema. Gera velocidade de desenvolvimento e entrega/melhora continua. Confiabilidade e escala.
+Praticas:
+Integração e entrega continua
+Microserviços - Executar atualizações pequenas e frequentes
+Infraestrutura como código
+Monitoramento e registro de logs
+Comunicação e colaboração
 
 - [ ] [CI/CD](https://www.youtube.com/watch?v=AZtTd3pFVTY&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=143)
 
