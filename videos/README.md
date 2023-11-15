@@ -103,11 +103,17 @@ Eventos - Sprint, ciclo de desenvolvimento com tempo pré determinado. Sprint pl
 Devops - development e operations
 Cultura de automatização de processos de desenvolvimento e infraestrutura. Cultura de trabalho, com praticas e ferramentas. Praticas agile fazem parte desse distema. Gera velocidade de desenvolvimento e entrega/melhora continua. Confiabilidade e escala.
 Praticas:
+
 Integração e entrega continua
+
 Microserviços - Executar atualizações pequenas e frequentes
+
 Infraestrutura como código
+
 Monitoramento e registro de logs
+
 Comunicação e colaboração
+
 
 - [ ] [CI/CD](https://www.youtube.com/watch?v=AZtTd3pFVTY&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=143)
 
