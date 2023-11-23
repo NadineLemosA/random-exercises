@@ -117,7 +117,7 @@ Comunicação e colaboração
 
 - [x] [CI/CD](https://www.youtube.com/watch?v=AZtTd3pFVTY&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=143)
 
-Continuous Integration e Continuous Delivery. Automatizar sequencia de etapas que precisam ser executadas para por a aplicação em produção. Automatização, integração de pequenas atualizações. Entrega continua, ligada ao conceito de metodologia agil, multidisciplinar. Rápida confiavel e precisa. 
+Continuous Integration e Continuous Delivery. Conjunto de praticas e ferramentas. Automatizar sequencia de etapas que precisam ser executadas para por a aplicação em produção. Automatização, integração de pequenas atualizações. Entrega continuae mais rapida, ligada ao conceito de metodologia agil, multidisciplinar. Rápida confiavel e precisa. 
 Ferramentas para costrução e impementação da automação: Jenkins, azure, AWS, entre outros.
 
 - [ ] [Estruturas de dados](https://www.youtube.com/watch?v=EfF1M7myAyY&list=PLVc5bWuiFQ8GgKm5m0cZE6E02amJho94o&index=71)
